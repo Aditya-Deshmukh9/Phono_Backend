@@ -3,7 +3,7 @@ const Products = require("../models/products-model");
 const products = async (req, res, next) => {
   try {
     let page = Number(req.query.page) || 1;
-    let limit = Number(req.query.limit) || 3;
+    let limit = Number(req.query.limit) || 40;
 
     const skip = (page - 1) * limit;
 
